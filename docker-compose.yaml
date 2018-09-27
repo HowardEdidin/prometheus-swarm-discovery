@@ -16,7 +16,7 @@ services:
   prometheus:
     image: prom/prometheus:v1.5.2
     ports:
-      - '9090:9090'
+      - '9098:9090'
     volumes:
       - ./prometheus-configs/:/etc/prometheus
       - swarm-endpoints:/etc/swarm-endpoints/
